@@ -1,0 +1,37 @@
+
+@use 'variables' as v;
+@use 'initial';
+@use 'mixins' as mx;
+
+/*header*/
+.header__title{
+    text-align: center;
+    color: v.$Dark-grayish-cyan;
+    font-size: 1em;
+    margin: 30px 0;
+    letter-spacing: 8px;
+}
+
+.calculator-container{
+    background-color: v.$White;
+    width: 375px;
+    //center
+    margin: auto;
+    border-radius: 16px;
+    padding: 32px;
+}
+.inputs-section__bill-label{
+   @include mx.label
+}
+.inputs-section__bill-input{
+    @include mx.input;
+}
+
+/*footer*/
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
