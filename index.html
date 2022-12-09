@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1 class="header__title">SPLIT<br>TTER</h1>
+  </header>
+  <section class="calculator-container">
+    <div class="inputs-section">
+
+      <label for="bill" class="inputs-section__bill-label">Bill</label>
+      <input id="bill" class="inputs-section__bill-input" type="number" value="0" >
+
+      <fieldset class="btns">
+        <legend class="btns__legend">Select Tip %</legend>
+        <button class="btns__button btns__button--select">5%</button>
+        <button class="btns__button">10%</button>
+        <button class="btns__button">15%</button>
+        <button class="btns__button">20%</button>
+        <button class="btns__button">25%</button>
+        <input type="number" placeholder="Custom">
+      </fieldset>
+
+      <label for="people" class="inputs-section__people-label">Number of persons</label>
+      <input id="people" class="inputs-section__people-input" type="number" value="4" >
+
+    </div>
+
+    <div class="results-section">
+      <div class="results">
+
+        <div>
+          <p  class="results__tip-amount">Tip Amount</p>
+          <p  class="results__tip-person">/ person</p>
+        </div>
+
+        <p  class="results__tip-value">$4.27</p>
+
+        <div>
+          <p  class="results__total-amount">Total</p>
+          <p  class="results__total-person">/ person</p>
+        </div>
+
+        <p class="results__total-value">$32.79</p>
+
+      </div>
+
+      <button>Reset</button>
+
+    </div>
+  </section>
+
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/luismiguelrodriguez3" target="_blank">Luis Miguel Rodríguez</a>.
+  </footer>
+  <script src="./main.js"></script>
+</body>
+</html>
