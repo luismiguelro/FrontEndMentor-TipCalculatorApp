@@ -17,6 +17,8 @@
     <h1 class="header__title">SPLIT<br>TTER</h1>
   </header>
   <section class="calculator-container">
+
+    <!--Section 1-->
     <div class="inputs-section">
 
       <label for="bill" class="inputs-section__bill-label">Bill</label>
@@ -24,19 +26,19 @@
 
       <fieldset class="btns">
         <legend class="btns__legend">Select Tip %</legend>
-        <button class="btns__button btns__button--select">5%</button>
-        <button class="btns__button">10%</button>
-        <button class="btns__button">15%</button>
+        <button class="btns__button">5%</button>
+        <button class="btns__button ">10%</button>
+        <button class="btns__button btns__button--select">15%</button>
         <button class="btns__button">20%</button>
         <button class="btns__button">25%</button>
-        <input type="number" placeholder="Custom">
+        <input type="number" placeholder="Custom" class="btns__custom">
       </fieldset>
 
-      <label for="people" class="inputs-section__people-label">Number of persons</label>
+      <label for="people" class="inputs-section__people-label">Number of people <span class="alert"></span></label>
       <input id="people" class="inputs-section__people-input" type="number" value="4" >
 
     </div>
-
+<!--Section 2-->
     <div class="results-section">
       <div class="results">
 

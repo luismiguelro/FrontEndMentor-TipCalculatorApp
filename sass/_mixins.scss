@@ -7,11 +7,38 @@
      margin-bottom: 8px;
 }
 
-@mixin input{
+@mixin input($icon){
     font-family: v.$font;
     font-size: 1em;
     text-align: right;
     width: 100%;
     height: 48px;
-    background-color: v.$Very-lightgrayish-cyan;
+    caret-color: v.$Very-lightgrayish-cyan;
+    border-radius: 4px;
+    padding-right: 10px;
+    border: none;
+    width: 100%;
+    height: 48px;
+    margin-bottom: 30px;
+    //quitar flechas
+    &:hover{
+        cursor: pointer;
+    }
+    /*campo total cuenta*/
+    &:focus{
+        outline: none;
+        border: 2px solid v.$Strong-cyan;
+    }
+    /*Eliminar flechas*/
+    &::-webkit-inner-spin-button{
+        -webkit-appearance: none;
+    }
+    //nesting
+    background: { 
+        image:url($icon);
+        repeat:no-repeat;
+        position: 10px center;
+    }
+    
+ 
 }

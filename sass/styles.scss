@@ -24,7 +24,51 @@
    @include mx.label
 }
 .inputs-section__bill-input{
-    @include mx.input;
+    @include mx.input("../images/icon-dollar.svg");
+}
+
+/*Botones*/
+.btns{
+    border: none;
+    //uno debajo del otro
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 30px;
+    &__legend{
+        @include mx.label
+    }
+    &__button{
+        width: 148px;;
+        height: 50px;
+        background-color: v.$Very-dark-cyan;
+        color: v.$Very-lightgrayish-cyan;
+        font-family: v.$font;
+        font-size: 1em;
+        border: none;
+        border-radius: 6px;
+        &:hover{
+            cursor: pointer;
+        }
+
+    }
+    &__custom{
+        @include mx.input(unset);
+        text-align: center;
+        color: v.$Dark-grayish-cyan;
+    }
+}
+
+/*Section input*/
+.inputs-section__people-label{
+    @include mx.label
+}
+
+.inputs-section__people-input{
+    @include mx.input("../images/icon-person.svg")
+}
+.error{
+    border: 2px solid rgb(164, 68, 68);
 }
 
 /*footer*/

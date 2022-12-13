@@ -41,7 +41,129 @@ body {
   text-align: right;
   width: 100%;
   height: 48px;
-  background-color: hsl(189deg, 41%, 97%);
+  caret-color: hsl(189deg, 41%, 97%);
+  border-radius: 4px;
+  padding-right: 10px;
+  border: none;
+  width: 100%;
+  height: 48px;
+  margin-bottom: 30px;
+  /*campo total cuenta*/
+  /*Eliminar flechas*/
+  background-image: url("../images/icon-dollar.svg");
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+.inputs-section__bill-input:hover {
+  cursor: pointer;
+}
+.inputs-section__bill-input:focus {
+  outline: none;
+  border: 2px solid hsl(172deg, 67%, 45%);
+}
+.inputs-section__bill-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/*Botones*/
+.btns {
+  border: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+.btns__legend {
+  display: block;
+  color: hsl(186deg, 14%, 43%);
+  font-size: 0.75em;
+  margin-bottom: 8px;
+}
+.btns__button {
+  width: 148px;
+  height: 50px;
+  background-color: hsl(183deg, 100%, 15%);
+  color: hsl(189deg, 41%, 97%);
+  font-family: "Space Mono", monospace;
+  font-size: 1em;
+  border: none;
+  border-radius: 6px;
+}
+.btns__button:hover {
+  cursor: pointer;
+}
+.btns__custom {
+  font-family: "Space Mono", monospace;
+  font-size: 1em;
+  text-align: right;
+  width: 100%;
+  height: 48px;
+  caret-color: hsl(189deg, 41%, 97%);
+  border-radius: 4px;
+  padding-right: 10px;
+  border: none;
+  width: 100%;
+  height: 48px;
+  margin-bottom: 30px;
+  /*campo total cuenta*/
+  /*Eliminar flechas*/
+  background-image: url(unset);
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  text-align: center;
+  color: hsl(186deg, 14%, 43%);
+}
+.btns__custom:hover {
+  cursor: pointer;
+}
+.btns__custom:focus {
+  outline: none;
+  border: 2px solid hsl(172deg, 67%, 45%);
+}
+.btns__custom::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/*Section input*/
+.inputs-section__people-label {
+  display: block;
+  color: hsl(186deg, 14%, 43%);
+  font-size: 0.75em;
+  margin-bottom: 8px;
+}
+
+.inputs-section__people-input {
+  font-family: "Space Mono", monospace;
+  font-size: 1em;
+  text-align: right;
+  width: 100%;
+  height: 48px;
+  caret-color: hsl(189deg, 41%, 97%);
+  border-radius: 4px;
+  padding-right: 10px;
+  border: none;
+  width: 100%;
+  height: 48px;
+  margin-bottom: 30px;
+  /*campo total cuenta*/
+  /*Eliminar flechas*/
+  background-image: url("../images/icon-person.svg");
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+.inputs-section__people-input:hover {
+  cursor: pointer;
+}
+.inputs-section__people-input:focus {
+  outline: none;
+  border: 2px solid hsl(172deg, 67%, 45%);
+}
+.inputs-section__people-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.error {
+  border: 2px solid rgb(164, 68, 68);
 }
 
 /*footer*/
