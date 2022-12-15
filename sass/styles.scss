@@ -50,6 +50,14 @@
         &:hover{
             cursor: pointer;
         }
+        &:active{
+          background-color: v.$Strong-cyan;
+          color: v.$Dark-grayish-cyan;  
+        }
+        &--select{
+          background-color: v.$Strong-cyan;
+          color: v.$Dark-grayish-cyan;  
+        }
 
     }
     &__custom{
@@ -84,7 +92,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 20px;
-    gap: 20px;v //espacio
+    gap: 20px;//espacio
     &__tip-amount{
         font-size: 0.75em;
         color: v.$Very-lightgrayish-cyan;
@@ -157,9 +165,11 @@
     .results{
         &__tip-value{
             font-size: 2em;
+            text-align: center;
         }
         &__total-value{
             font-size: 2em;
+            text-align: center;
         }
     }
 }

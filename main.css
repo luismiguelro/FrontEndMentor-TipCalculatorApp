@@ -92,6 +92,14 @@ body {
 .btns__button:hover {
   cursor: pointer;
 }
+.btns__button:active {
+  background-color: hsl(172deg, 67%, 45%);
+  color: hsl(186deg, 14%, 43%);
+}
+.btns__button--select {
+  background-color: hsl(172deg, 67%, 45%);
+  color: hsl(186deg, 14%, 43%);
+}
 .btns__custom {
   font-family: "Space Mono", monospace;
   font-size: 1em;
@@ -182,7 +190,7 @@ body {
   margin-bottom: 20px;
   gap: 20px;
 }
-v .results__tip-amount, v .results__total-amount {
+.results__tip-amount, .results__total-amount {
   font-size: 0.75em;
   color: hsl(189deg, 41%, 97%);
 }
@@ -244,9 +252,11 @@ v .results__tip-amount, v .results__total-amount {
   }
   .results__tip-value, .results__total-value {
     font-size: 2em;
+    text-align: center;
   }
   .results__total-value {
     font-size: 2em;
+    text-align: center;
   }
 }
 
