@@ -54,10 +54,6 @@
           background-color: v.$Strong-cyan;
           color: v.$Dark-grayish-cyan;  
         }
-        &--select{
-          background-color: v.$Strong-cyan;
-          color: v.$Dark-grayish-cyan;  
-        }
 
     }
     &__custom{
@@ -66,6 +62,10 @@
         color: v.$Dark-grayish-cyan;
     }
 }
+.btns__button--selected {
+    background-color: hsl(172deg, 67%, 45%);
+    color: hsl(183deg, 100%, 15%);
+  }
 
 /*Section input*/
 .inputs-section__people-label{
@@ -76,7 +76,12 @@
     @include mx.input("../images/icon-person.svg")
 }
 .error{
-    border: 2px solid rgb(164, 68, 68);
+    color: rgb(164, 68, 68);
+    &::after{
+        content: "Can't be zero";
+        font-size: 0.7em;
+        
+    }
 }
 
 /*Result section*/

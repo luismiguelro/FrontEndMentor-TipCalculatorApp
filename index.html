@@ -27,15 +27,15 @@
       <fieldset class="btns">
         <legend class="btns__legend">Select Tip %</legend>
         <button class="btns__button">5%</button>
-        <button class="btns__button ">10%</button>
-        <button class="btns__button btns__button--select">15%</button>
+        <button class="btns__button btns__button--selected">10%</button>
+        <button class="btns__button">15%</button>
         <button class="btns__button">25%</button>
         <button class="btns__button">50%</button>
         <input type="number" placeholder="Custom" class="btns__custom">
       </fieldset>
 
-      <label for="people" class="inputs-section__people-label">Number of people <span class="alert"></span></label>
-      <input id="people" class="inputs-section__people-input" type="number" value="5" >
+      <label for="people" class="inputs-section__people-label">Number of people <span id="alert"></span></label>
+      <input id="people" class="inputs-section__people-input" type="number" min="1" value="5" >
 
     </div>
 <!--Section 2-->

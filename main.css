@@ -96,10 +96,6 @@ body {
   background-color: hsl(172deg, 67%, 45%);
   color: hsl(186deg, 14%, 43%);
 }
-.btns__button--select {
-  background-color: hsl(172deg, 67%, 45%);
-  color: hsl(186deg, 14%, 43%);
-}
 .btns__custom {
   font-family: "Space Mono", monospace;
   font-size: 1em;
@@ -130,6 +126,11 @@ body {
 }
 .btns__custom::-webkit-inner-spin-button {
   -webkit-appearance: none;
+}
+
+.btns__button--selected {
+  background-color: hsl(172deg, 67%, 45%);
+  color: hsl(183deg, 100%, 15%);
 }
 
 /*Section input*/
@@ -171,7 +172,11 @@ body {
 }
 
 .error {
-  border: 2px solid rgb(164, 68, 68);
+  color: rgb(164, 68, 68);
+}
+.error::after {
+  content: "Can't be zero";
+  font-size: 0.7em;
 }
 
 /*Result section*/
