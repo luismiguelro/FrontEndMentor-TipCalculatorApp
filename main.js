@@ -76,8 +76,6 @@ people.addEventListener('input',()=>{
         people.style.borderColor='hsl(189, 41%, 97%)';
         calculateTip();
     }
-    
-    
 })
 
 //Funciones
@@ -90,8 +88,10 @@ function calculateTip(){
     totalResult.innerHTML = ((tipAmount+billNumber)/peopleNumber).toFixed(2);
 }
 function removeActive(){
-            // cambiar clase active
-            buttons.forEach(element =>{
-                element.classList.remove('btns__button--selected');
-            });
+
+    // cambiar clase active
+    buttons.forEach(element =>{
+
+        element.classList.remove('btns__button--selected');
+    });
 }
