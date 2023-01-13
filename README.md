@@ -35,7 +35,7 @@ Mobile design
 ### Links
 
 -   Solution URL: [See Code](https://github.com/luismiguelrodriguez3/FrontEndMentor-TipCalculatorApp)
--   Live Site URL: [Live Site](https://luismiguelrodriguez3.github.io/FrontEndMentor-TipCalculatorApp/)
+-   Live Site URL: [Live Site](https://frontendmentor-tipcalculatorapp.netlify.app/)
 
 ## My process
 
